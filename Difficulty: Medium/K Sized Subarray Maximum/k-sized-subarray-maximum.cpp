@@ -7,7 +7,7 @@ class Solution {
         list<int> l;
         vector<int>ans;
         while(j<n){
-            while(arr[j]>l.back() && l.size()>0){
+            while( l.size()>0 && arr[j]>l.back()){ 
                 l.pop_back();
             }
             l.push_back(arr[j]);
